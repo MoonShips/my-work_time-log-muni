@@ -627,7 +627,7 @@
     var basePay = Number(state.settings.basePay)||0;
     var mult = Number(state.settings.otMultiplier)||1.5;
     var tax = Number(state.settings.taxRate)||0;
-    var hourlyBase = basePay / 240; 
+    var hourlyBase = basePay / 233.52; 
     var pre = Math.round(hourlyBase * overtimeHours * mult);
     var post = Math.round(pre * (1 - tax/100));
     return { pre:pre, post:post };
